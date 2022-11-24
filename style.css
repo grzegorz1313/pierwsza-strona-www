@@ -2,6 +2,10 @@
     --kolorGlowny: #aa4444;
 }
 
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 #logoLink {
     display: block;
     text-align: center;
@@ -46,10 +50,23 @@ header hr {
         display: block;
         float: right;
     }
-    .topnav.responsive a{
-        display: block;
+
+    .topnav.responsive {
+        position: relative;
     }
 
+    .topnav.responsive a.mobMenuIcon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a{
+        display: block;
+        text-align: left;
+        float: none;
+    }
+    
 }
 
 /* ----------- Menu ----------- */
