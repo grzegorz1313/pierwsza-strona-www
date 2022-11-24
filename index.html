@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <a href="index.html" id="logoLink"><img src="images/Logo.png"></a>
+        <hr />
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html">Strona Główna</a>
+            <a href="index.html">O nas</a>
+            <a href="index.html">Usługi</a>
+            <a href="index.html">Kontakt</a>
+            <a href="javascript:void(0);" class="mobMenuIcon" onclick="myFunction()">M</a>
+        </nav>
+    </header>
+
+
+
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myTopnav");
+            if(x.className === "topnav"){
+                x.className += "responsive";
+            } else{
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>
