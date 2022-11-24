@@ -1,5 +1,6 @@
 :root {
     --kolorGlowny: #aa4444;
+    --kolorTla: rgb(226, 226, 226);
 }
 
 body {
@@ -91,6 +92,29 @@ header hr {
 }
 
 /* ----------- /Baner ----------- */
+/* ----------- Main ----------- */
+main {
+    background: var(--kolorTla);
+}
+
+main .container {
+    display: flex;
+}
+
+.mainItem {
+    background: white;
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+}
+
+main .container #mainColumn {
+    flex: 70vw;
+}
+
+main .container #mainAside {
+    flex: 30vw;
+}
+/* ----------- /Main ----------- */
 
 @media screen and (max-width:800px) {
 
@@ -135,9 +159,18 @@ header hr {
     .baner h3 {
         font-size: 7vw;
     }
-
-
-
 /* ----------- /Baner ----------- */
 
+/* ----------- Main ----------- */
+    main .container {
+        flex-direction: column;
+    }
+    main .container #mainColumn {
+        flex: auto;
+    }
+    
+    main .container #mainAside {
+        flex: auto;
+    }
+/* ----------- /Main ----------- */
 }
