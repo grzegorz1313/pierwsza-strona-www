@@ -105,6 +105,26 @@ main .container {
     background: white;
     padding: 1rem;
     margin: 1rem 0.5rem;
+    position: relative;
+}
+
+.entry-links {
+    position: absolute;
+    display: flex;
+    text-transform: uppercase;
+    width: 350px;
+    top: 2rem;
+    left: 2rem;
+}
+
+.links {
+    margin-right: 5px;
+}
+
+.entry-links a {
+    font-size: 0.8rem;
+    padding: 5px;
+    letter-spacing: 1px;
 }
 
 main .container #mainColumn {
@@ -115,6 +135,55 @@ main .container #mainAside {
     flex: 30vw;
 }
 /* ----------- /Main ----------- */
+
+/* ----------- Article ----------- */
+.artThumbnail {
+    display: block;
+    width: 100%;
+}
+
+.entry-meta {
+    padding: 1rem 0;
+}
+
+.entry-meta a {
+    color: var(--kolorGlowny);
+    text-decoration: none;
+}
+
+article h2 a {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.4;
+    font-family: Noto Serif;
+    text-decoration: none;
+    color: var(--kolorGlowny);
+}
+
+article p {
+    color: rgb(128, 128, 128);
+}
+
+.fa-my-class {
+    font-size: 0.3rem;
+    position: relative;
+    bottom: 0.2rem;
+    padding: 0 0.2rem;
+}
+
+.entry-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+.share-icons a {
+    color: rgb(143, 143, 143);
+    font-size: 1.2rem;
+    letter-spacing: 1rem;
+}
+/* ----------- /Article ----------- */
 
 @media screen and (max-width:800px) {
 
@@ -173,4 +242,11 @@ main .container #mainAside {
         flex: auto;
     }
 /* ----------- /Main ----------- */
+
+/* ----------- Article ----------- */
+.entry-footer {
+    flex-direction: column-reverse;
+    row-gap: 1rem;
+}
+/* ----------- /Article ----------- */
 }
