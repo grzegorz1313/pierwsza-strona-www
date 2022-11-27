@@ -255,6 +255,7 @@ article p {
 
 #featured {
     background: var(--kolorTla);
+    padding-bottom: 1rem;
 }
 #featured h2 {
     text-transform: uppercase;
@@ -296,6 +297,31 @@ article p {
 }
 /* ----------- /Featured ----------- */
 
+/* ----------- Footer ----------- */
+footer {
+    background: black;
+    padding: 2rem 0;
+    color: white;
+    text-align: center;
+}
+footer .menu a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 0.4rem;
+}
+footer .social {
+    margin: 1.5rem 0;
+}
+footer .social a {
+    color: #ccc;
+    letter-spacing: 1rem;
+}
+footer .copyright a{
+    color: var(--kolorGlowny);
+    text-decoration: none;
+}
+/* ----------- /Footer ----------- */
 @media screen and (max-width:800px) {
 
 /* ----------- Menu ----------- */    
