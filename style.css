@@ -108,25 +108,6 @@ main .container {
     position: relative;
 }
 
-.entry-links {
-    position: absolute;
-    display: flex;
-    text-transform: uppercase;
-    width: 350px;
-    top: 2rem;
-    left: 2rem;
-}
-
-.links {
-    margin-right: 5px;
-}
-
-.entry-links a {
-    font-size: 0.8rem;
-    padding: 5px;
-    letter-spacing: 1px;
-}
-
 main .container #mainColumn {
     flex: 70vw;
 }
@@ -134,6 +115,7 @@ main .container #mainColumn {
 main .container #mainAside {
     flex: 30vw;
 }
+
 /* ----------- /Main ----------- */
 
 /* ----------- Article ----------- */
@@ -183,7 +165,91 @@ article p {
     font-size: 1.2rem;
     letter-spacing: 1rem;
 }
+
+.link-buttons {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+}
+
+.link-buttons a.btn {
+    display: inline-block;
+    max-width: 100%;
+    padding: 0.4rem 1rem;
+}
 /* ----------- /Article ----------- */
+/* ----------- Widgety ----------- */
+
+.cytat {
+    background: var(--kolorGlowny);
+    color: white;
+    text-align: center;
+}
+
+.cytat p:nth-child(1) {
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.mainItem h4 {
+    text-transform: uppercase;
+    color: var(--kolorGlowny);
+}
+.mainItem.tags a {
+    background: #ccc;
+    text-decoration: none;
+    color: black;
+    padding: 0.6rem 1rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0.2rem 0.1rem;
+}
+
+.mainItem ul {
+    margin: 0;
+    padding: 0;
+}
+.mainItem ul li{
+    list-style-type: none;
+    padding: 1rem 0;
+    position: relative;
+}
+.mainItem ul li:not(:last-child)::after{
+    content: '';
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.mainItem.recentComments ul li span{
+    color: var(--kolorGlowny);
+}
+.mainItem.recentComments ul li span::before{
+    color: black;
+    content: '\2014';
+    padding-right: 0.3rem;
+}
+
+.mainItem.recentComments ul li a{
+    color: #888;
+    text-decoration: none;
+    display: block;
+    padding-top: 0.3rem;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.mainItem.categories ul li::before{
+    content: '\27B2';
+    padding-right: 0.3rem;
+}
+
+.mainItem.categories a {
+    color: #888;
+    text-decoration: none;
+}
+/* ----------- /Widgety ----------- */
 
 @media screen and (max-width:800px) {
 
