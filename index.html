@@ -7,11 +7,34 @@
     <title>Pierwsza strona www</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+	
+	<script>
+	jQuery(function($)
+		{
+			$.scrollTo(0);
+			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+	
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		}
+		);
+	</script>
 </head>
 <body>
     <header>
-        <a href="index.html" id="logoLink"><img src="images/Logo.png"></a>
+        <!-- <a href="index.html" id="logoLink"><img src="images/Logo.png"></a> -->
+        <div class="logoLink">
+            <a href="http://portfolio.ugu.pl/" id="logoLink" target="_blank">www.portfolio.ugu.pl</a>
+        </div>
         <hr />
+        <a href="#" class="scrollup"></a>
         <nav class="topnav" id="myTopnav">
             <a href="index.html">Strona Główna</a>
             <a href="index.html">O nas</a>
@@ -23,9 +46,9 @@
 
     <section class="baner">
         <div class="container">
-            <h1>Front End Development</h1>
-            <h3>Nasze stronki są the best</h3>
-            <a href="#" class="btn">Read more</a>
+            <h1>Programmer Front End</h1>
+            <h3>Moje portfolio</h3>
+            <a href="http://portfolio.ugu.pl/" target="_blank" class="btn">Read more</a>
         </div>
     </section>
 
@@ -186,5 +209,28 @@
             }
         }
     </script>
+    	<!-- <script src="jquery-3.6.0.min.js"></script> -->
+	
+        <script>
+                $(document).ready(function() {
+                var stickyNavTop = $('.topnav').offset().top;
+    
+                var stickyNav = function(){
+                var scrollTop = $(window).scrollTop();
+    
+                if (scrollTop > stickyNavTop) {
+                        $('.topnav').addClass('sticky');
+                } else {
+                        $('.topnav').removeClass('sticky');
+                }
+                };
+    
+                stickyNav();
+    
+                $(window).scroll(function() {
+                stickyNav();
+                });
+                });
+        </script>
 </body>
 </html>

@@ -1,3 +1,23 @@
+.scrollup
+{
+	width: 64px;
+	height: 64px;
+	text-decoration: none;
+	background: url("images/up.png") no-repeat 0px 0px;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	display: none;
+}
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+    background: white;
+}
 :root {
     --kolorGlowny: #aa4444;
     --kolorTla: rgb(226, 226, 226);
@@ -35,7 +55,31 @@ body {
 #logoLink {
     display: block;
     text-align: center;
+    height: 50px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--kolorGlowny);
+    padding-top: 10px;
 }
+
+.logoLink a{
+    animation:przesun 30s linear infinite;
+    -webkit-animation:przesun 5s linear infinite;
+}
+.logoLink a:hover{
+    animation-play-state:paused;
+    -webkit-animation-play-state:paused;
+}
+@keyframes przesun
+{
+  0% { transform:translateX(0); padding-left:80%; }
+  100% { transform:translateX(-100%); padding-left:80%; }
+}
+/* @-webkit-keyframes przesun /* dla Google Chrome, Safari, Opera 15+ */
+/* {
+  0% { -webkit-transform:translateX(0); padding-left:110%; }
+  100% { -webkit-transform:translateX(-100%); padding-left:110%; }
+} */ */
 
 header hr {
     width: 80%;
