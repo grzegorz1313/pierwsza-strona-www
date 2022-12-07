@@ -236,6 +236,14 @@ article p {
     font-size: 1.4rem;
 }
 
+#clock
+{
+	font-style: 'Josefin Sans', sans-serif;
+	font-size: 4rem;
+    color: var(--kolorGlowny);
+    text-align: center;
+}
+
 .mainItem h4 {
     text-transform: uppercase;
     color: var(--kolorGlowny);
