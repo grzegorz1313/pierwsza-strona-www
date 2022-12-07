@@ -248,15 +248,6 @@ article p {
     text-transform: uppercase;
     color: var(--kolorGlowny);
 }
-.mainItem.tags a {
-    background: #ccc;
-    text-decoration: none;
-    color: black;
-    padding: 0.6rem 1rem;
-    text-transform: uppercase;
-    display: inline-block;
-    margin: 0.2rem 0.1rem;
-}
 
 .mainItem ul {
     margin: 0;
