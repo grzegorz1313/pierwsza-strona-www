@@ -7,6 +7,7 @@
     <title>Pierwsza strona www</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="jquery.scrollTo.min.js"></script>
 	
@@ -57,9 +58,56 @@
         <div class="container">
             <section id="mainColumn">
                 <article class="mainItem">
-                    <a href="#">
-                        <img src="images/des1.jpg" class="artThumbnail">
-                    </a>
+                    <div id="slides" class="slides" tabindex="1" autofocus="autofocus">
+                    <figure id="slide1" class="show">
+                        <a href="https://www.gry-online.pl/gry/gothic/z11394" target="_blank"><img src="https://spidersweb.pl/_next/image?url=https%3A%2F%2Focs-pl.oktawave.com%2Fv1%2FAUTH_2887234e-384a-4873-8bc5-405211db13a2%2Fspidersweb%2F2021%2F03%2Fgothic-20-lat.jpg&w=1200&q=75" width="100%" /></a><figcaption>Image 1: "Gothic" by <a href="https://www.piranha-bytes.com/" target="_blank">Piranha Bytes</a>.</figcaption> 
+                        <div class="link-buttons">
+                            <a href="#" class="btn">link 1</a>
+                            <a href="#" class="btn">link 2</a>
+                        </div>
+                      </figure>
+                    </figure>
+                    <figure id="slide2">
+                      <a href="https://www.heroes3.eu/" target="_blank"><img src="https://cdn2.unrealengine.com/heroes-iii-complete-epic-edition-capsule-hero-carrousel-1920x1080-1920x1080-8dbed88694f1.jpg" width="100%" /></a><figcaption>Image 2: "Heroes 3" by <a href="https://www.ubisoft.com/pl-pl/game/heroes-of-might-and-magic-3-hd" target="_blank">Ubisoft</a>.</figcaption> 
+                      <div class="link-buttons">
+                        <a href="#" class="btn">link 1</a>
+                        <a href="#" class="btn">link 2</a>
+                    </div>
+                    </figure>
+                    <figure  id="slide3">
+                        <a href="https://www.gry-online.pl/gry/the-settlers-iii/z810af" target="_blank"><img src="https://www.mobygames.com/images/promo/original/1465749717-3442177662.jpg" width="100%" /></a><figcaption>Image 3: "Settlers 3" by <a href="https://www.ubisoft.com/pl-pl/game/the-settlers/history-collection/news-updates/4da8XufFeq0T0Up0Obg6je/przewodnik-the-settlers-iii-history-edition" target="_blank">Ubisoft</a>.</figcaption>
+                        <div class="link-buttons">
+                            <a href="#" class="btn">link 1</a>
+                            <a href="#" class="btn">link 2</a>
+                        </div> 
+                      </figure>
+                      <figure id="slide4">
+                        <a href="https://wowwiki.fandom.com/pl/wiki/Warcraft_III:_The_Frozen_Throne" target="_blank"><img src="https://www.wikihow-fun.com/images/thumb/4/4e/Get-Good-at-One-Vs-One-in-Warcraft-III-Step-5.jpg/aid85806-v4-728px-Get-Good-at-One-Vs-One-in-Warcraft-III-Step-5.jpg" width="100%" /></a><figcaption>Image 4: "Warcraft 3" by <a href="https://www.blizzard.com/pl-pl/" target="_blank">Blizzard</a>.</figcaption> 
+                        <div class="link-buttons">
+                            <a href="#" class="btn">link 1</a>
+                            <a href="#" class="btn">link 2</a>
+                        </div>
+                      </figure>
+                      <figure id="slide5">
+                        <a href="https://www.totalwar.com/games/" target="_blank"><img src="https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2018/08/RTW_iPhone_Screen_7.png?w=2000&quality=82&strip=all&ssl=1" width="100%" /></a><figcaption>Image 5: "Rome: Total War" by <a href="https://www.creative-assembly.com/" target="_blank">Creative Assembly</a>.</figcaption> 
+                        <div class="link-buttons">
+                            <a href="#" class="btn">link 1</a>
+                            <a href="#" class="btn">link 2</a>
+                        </div>
+                      </figure>
+                    <div id="prev" class="prev">&laquo;</div>
+                    <div id="next" class="next">&raquo;</div>
+                </div>
+                <nav class="nav_pcs">
+                    <ul>
+                        <li><button id="pin1" class="pin" /></li>
+                        <li><button id="pin2" class="pin" /></li>
+                        <li><button id="pin3" class="pin" /></li>
+                        <li><button id="pin4" class="pin" /></li>
+                        <li><button id="pin5" class="pin" /></li>
+                    </ul>
+                    <button id="play" class="play"></button>
+                </nav>
                     <div class="entry-meta">
                         &mdash;&nbsp; By <a href="#">admin</a>
                         <i class="fa-solid fa-circle fa-my-class"></i>
@@ -67,21 +115,17 @@
                         <i class="fa-solid fa-circle fa-my-class"></i>
                         <a herf="#">1 comment</a>
                     </div>
-                    <h2><a href="#">Cabo Polonio: Uruguay's Village of Miracles</a></h2>
+                    <h2><a href="#">Kultowe stare gry i trochę nowsze</a></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum maxime suscipit hic sed? Corporis aperiam ipsa dolore, ipsum accusantium perferendis eveniet quo delectus totam omnis atque? Asperiores saepe harum voluptas!</p>
                     <div class="entry-footer">
                         <a href="#" class="btn">Read more</a>
                         <div class="share-icons">
-                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://pl.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
                         </div>
-                    </div>
-                    <div class="link-buttons">
-                        <a href="#" class="btn">link 1</a>
-                        <a href="#" class="btn">link 2</a>
                     </div>
                 </article>
                 <article class="mainItem">
@@ -204,7 +248,6 @@
             }
         }
     </script>
-    	<!-- <script src="jquery-3.6.0.min.js"></script> -->
 	
         <script>
                 $(document).ready(function() {
@@ -227,5 +270,6 @@
                 });
                 });
         </script>
+        <script type="text/javascript" src="step6.js"></script>	
 </body>
 </html>
