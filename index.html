@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="jquery.scrollTo.min.js"></script>
 	
@@ -129,32 +130,26 @@
                     </div>
                 </article>
                 <article class="mainItem">
-                    <a href="#">
-                        <img src="images/des2.jpg" class="artThumbnail">
-                    </a>
-                    <div class="entry-meta">
-                        &mdash;&nbsp; By <a href="#">admin</a>
-                        <i class="fa-solid fa-circle fa-my-class"></i>
-                        31.07.2022
-                        <i class="fa-solid fa-circle fa-my-class"></i>
-                        <a herf="#">1 comment</a>
-                    </div>
-                    <h2><a href="#">Cabo Polonio: Uruguay's Village of Miracles</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum maxime suscipit hic sed? Corporis aperiam ipsa dolore, ipsum accusantium perferendis eveniet quo delectus totam omnis atque? Asperiores saepe harum voluptas!</p>
-                    <div class="entry-footer">
-                        <a href="#" class="btn">Read more</a>
-                        <div class="share-icons">
-                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                        </div>
-                    </div>
-                    <div class="link-buttons">
-                        <a href="#" class="btn">link 1</a>
-                        <a href="#" class="btn">link 2</a>
-                    </div>
+                    <main class="slider">
+                        <section class="slider_container">
+                            <button class="slider_button slider_button--prev" data-button-prev></button>
+                            <figure class="slide" data-slide></figure>
+                            <button class="slider_button slider_button--next" data-button-next></button>
+                        </section>
+                    </main>
+                    <script src="index.js"></script>
+                    <script>
+                        const imageArr = [
+                            './images/01.jpg',
+                            './images/02.jpg',
+                            './images/03.jpg',
+                            './images/04.jpg',
+                            './images/05.jpg',
+                        ];
+                
+                        const slider = new Slider(imageArr);
+                        slider.initializeSlider();
+                    </script>
                 </article>
             </section>
             <section id="mainAside">
